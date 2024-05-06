@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StrayKids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: grey;
+    }
+    .container {
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: gray;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .greetings {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item img {
+    max-width: 100%;
+    max-height: 400px; 
+    margin: 0 auto; 
+    display: block;
+  }
+
+  button {
+    padding: 10px 20px; /* Padding di sekitar teks dalam tombol */
+    font-size: 16px; /* Ukuran font teks dalam tombol */
+    color: white; /* Warna teks tombol */
+    background-color: #007BFF; /* Warna latar belakang tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Membuat tepi tombol menjadi bulat */
+    cursor: pointer; /* Mengubah kursor saat melayang di atas tombol */
+    transition: background-color 0.3s; /* Animasi perubahan warna saat melayang */
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Warna tombol saat di-hover */
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex; /* Gunakan flexbox untuk mengatur baris */
+    flex-direction: column; /* Elemen anak (baris) ditumpuk secara vertikal */
+    align-items: center; /* Pusatkan elemen anak secara horizontal */
+    justify-content: center; /* Pusatkan elemen anak secara vertikal */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  footer a {
+    margin: 0 5px; /* Margin kecil di sekitar tautan */
+    color: #f8f9fa; /* Warna tautan */
+    text-decoration: none; /* Hapus garis bawah */
+  }
+
+  footer a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+  }
+
+  .small {
+    font-size: 0.8rem; /* Kecilkan ukuran font */
+    opacity: 0.7; /* Sedikit transparan */
+  }
+
+
+  </style>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">STRAYKIDS</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/564x/7f/ae/6f/7fae6f009972e3ec7ccfda5106afa54c.jpg" alt="JYPcompanyLogo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Members.html">Members</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-item" data-bs-toggle="dropdown" href="#">Music</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="song.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="mv.html">MV</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="container">
+          <div class="text">
+              <p class="greetings" id="greetings"></p>
+              <p id="current-time"></p>
+              <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://6.soompi.io/wp-content/uploads/image/20230718181519_Stray-Kids-4.jpg?s=900x600&e=t" alt="skz1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://altselection.com/wp-content/uploads/2022/09/sb-scaled.webp" alt="skz2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/10/01-stray-kids-press-2022-cr-jyp-entertainment-billboard-1548.jpg?w=942&h=623&crop=1" alt="skz3">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+          </div><button onclick="showStrayKidsInfo()">Klik untuk Info</button>
+
+      </div>
+  </section>
+
+  <footer class="bg-dark text-light">
+    <div class="row">
+      <p>Follow Us On Social Media</p>
+      <a href="https://www.facebook.com">Facebook</a>|
+      <a href="https://www.twitter.com">Twitter</a>|
+      <a href="https://www.instagram.com">Instagram</a>
+    
+      <p class="small">© 2024 Stray Kids Fan Club. All rights reserved.</p>
+
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // JavaScript for real-time greetings and current time
+    function updateGreetings() {
+        var today = new Date();
+        var currentHour = today.getHours();
+        var greetingsElement = document.getElementById('greetings');
+        var currentTimeElement = document.getElementById('current-time');
+        var greetings = '';
+
+        if (currentHour < 12) {
+            greetings = 'Hai Selamat Pagi! ☀️';
+        } else if (currentHour < 18) {
+            greetings = 'Hai Selamat Siang!🌤️';
+        } else if (currentHour < 20) {
+            greetings = 'Hai Selamat Sore!🌥️';
+        } else {
+            greetings = 'Hai Selamat Malam!🌑';
+        }
+
+        greetingsElement.innerText = greetings;
+        currentTimeElement.innerText = 'Waktu Sekarang: ' + today.toLocaleTimeString();
+    }
+
+    updateGreetings();
+    setInterval(updateGreetings, 1000);
+
+    // JavaScript for carousel
+    var slideIndex = 0;
+
+    function showSlide() {
+        var slides = document.querySelectorAll('.card');
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        } else if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+    }
+
+    function nextSlide() {
+        slideIndex++;
+        showSlide();
+    }
+
+    function prevSlide() {
+        slideIndex--;
+        showSlide();
+    }
+
+    showSlide();
+</script>
+
+<script>
+  function showStrayKidsInfo() {
+    alert("Stray Kids adalah grup musik K-pop yang dibentuk oleh JYP Entertainment. Mereka terkenal dengan energi mereka yang dinamis dan lagu-lagu yang menginspirasi.");
+  }
+</script>  
+</body>
+</html>

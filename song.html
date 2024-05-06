@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StrayKids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: grey;
+    }
+    .container {
+        max-width: 900px;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .container1 {
+        display: inline-block;
+      }
+      .song-container {
+      width: auto;
+      display: inline-flexbox;
+      align-items: center;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .song-container img {
+      max-width: 150px;
+      margin:auto;
+      vertical-align: middle;
+    }
+    .song-details {
+      display: block; /* agar konten di dalam container berada dalam satu baris */
+    }
+
+    footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex; /* Gunakan flexbox untuk mengatur baris */
+    flex-direction: column; /* Elemen anak (baris) ditumpuk secara vertikal */
+    align-items: center; /* Pusatkan elemen anak secara horizontal */
+    justify-content: center; /* Pusatkan elemen anak secara vertikal */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  footer a {
+    margin: 0 5px; /* Margin kecil di sekitar tautan */
+    color: #f8f9fa; /* Warna tautan */
+    text-decoration: none; /* Hapus garis bawah */
+  }
+
+  footer a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+  }
+
+  .small {
+    font-size: 0.8rem; /* Kecilkan ukuran font */
+    opacity: 0.7; /* Sedikit transparan */
+  }
+
+  </style>
+  </head>
+  <body>
+
+  </body>
+  <h1 class="text-center mt-3">STRAYKIDS</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/564x/7f/ae/6f/7fae6f009972e3ec7ccfda5106afa54c.jpg" alt="JYPcompanyLogo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Members.html">Members</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-item active" data-bs-toggle="dropdown" href="#">Music</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="song.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="mv.html">MV</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  
+    <div class="container">
+      <h2>Songs</h2>
+        <div class="song-container">
+          <img src="https://i1.sndcdn.com/artworks-gvXf9cTolLfK-0-t500x500.jpg" alt="maniac">
+          <div class="song-details">
+            <h3 style="text-align: center ;">Maniac</h3>
+            <audio controls>
+              <source src="MANIAC.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      
+        <div class="song-container">
+          <img src="https://i.scdn.co/image/ab67616d00001e022bca95a658fdf653a35a3710" alt="Cover me">
+          <div class="song-details">
+            <h3>Cover Me</h3>
+            <audio controls>
+              <source src="Cover me.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      
+        <div class="song-container">
+          <img src="https://cdns-images.dzcdn.net/images/cover/deb46deb25179d2f56900ca0a4e2e0f4/500x500.jpg" alt="item">
+          <div class="song-details">
+            <h3>Item</h3>
+            <audio controls>
+              <source src="ITEM.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+      </div>
+      <!-- Tambahkan container untuk lagu-lagu lainnya -->
+    
+    </div>
+    
+    <footer class="bg-dark text-light">
+            <div class="row">
+              <p>Follow Us On Social Media</p>
+              <a href="https://www.facebook.com">Facebook</a>|
+              <a href="https://www.twitter.com">Twitter</a>|
+              <a href="https://www.instagram.com">Instagram</a>
+            
+              <p class="small">© 2024 Stray Kids Fan Club. All rights reserved.</p>
+    
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

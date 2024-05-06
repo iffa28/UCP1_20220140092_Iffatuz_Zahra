@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StrayKids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: gray;
+    }
+    .container {
+        max-width: 1300px;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: gray;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .member {
+        width: 10%;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .member img {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      .member h3 {
+        margin: 0;
+      }
+
+      footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex; /* Gunakan flexbox untuk mengatur baris */
+    flex-direction: column; /* Elemen anak (baris) ditumpuk secara vertikal */
+    align-items: center; /* Pusatkan elemen anak secara horizontal */
+    justify-content: center; /* Pusatkan elemen anak secara vertikal */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  footer a {
+    margin: 0 5px; /* Margin kecil di sekitar tautan */
+    color: #f8f9fa; /* Warna tautan */
+    text-decoration: none; /* Hapus garis bawah */
+  }
+
+  footer a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+  }
+
+  .small {
+    font-size: 0.8rem; /* Kecilkan ukuran font */
+    opacity: 0.7; /* Sedikit transparan */
+  }
+  </style>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">STRAYKIDS</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/564x/7f/ae/6f/7fae6f009972e3ec7ccfda5106afa54c.jpg" alt="JYPcompanyLogo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Members.html">Members</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-item" data-bs-toggle="dropdown" href="#">Music</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="song.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="mv.html">MV</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <h2>Stray Kids Members</h2>
+      <div class="members">
+        <div class="member">
+          <img src="https://i.pinimg.com/736x/85/f0/31/85f031e56affa54db23ed97fda920e36.jpg" alt="Bang Chan">
+          <h3>Bang Chan</h3>
+        </div>
+        <div class="member">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbbkDRi60j7YYfqDaBd5fq-4MzEk8X_Rq9g&usqp=CAU" alt="Lee Know">
+          <h3>Lee Know</h3>
+        </div>
+        <div class="member">
+          <img src="https://i.pinimg.com/736x/09/54/3c/09543cd96c73c17e86b3faed21fa0eb9.jpg" alt="Changbin">
+          <h3>Changbin</h3>
+        </div>
+        <div class="member">
+          <img src="https://cdn0-production-images-kly.akamaized.net/82_QuaMg4swUFyBR62069N-SkrE=/500x667/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3328243/original/049554100_1608354003-hh4.jpg" alt="Hyunjin">
+          <h3>Hyunjin</h3>
+        </div>
+        <div class="member">
+          <img src="https://boo-prod.b-cdn.net/database/profiles/1694519087634bc08500fff34766d622177318ece5d9c.jpg" alt="Han">
+          <h3>Han</h3>
+        </div>
+        <div class="member">
+          <img src="https://ih1.redbubble.net/image.4722370604.6369/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" alt="Felix">
+          <h3>Felix</h3>
+        </div>
+        <div class="member">
+          <img src="https://koreanindo.net/wp-content/uploads/2023/11/Seungmin-2-3.jpeg" alt="Seungmin">
+          <h3>Seungmin</h3>
+        </div>
+        <div class="member">
+          <img src="https://i.pinimg.com/originals/be/ed/e7/beede77f51f632a06ee5990274543dbb.jpg" alt="I.N">
+          <h3>I.N</h3>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light">
+      <div class="row">
+        <p>Follow Us On Social Media</p>
+        <a href="https://www.facebook.com">Facebook</a>|
+        <a href="https://www.twitter.com">Twitter</a>|
+        <a href="https://www.instagram.com">Instagram</a>
+      
+        <p class="small">© 2024 Stray Kids Fan Club. All rights reserved.</p>
+  
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>

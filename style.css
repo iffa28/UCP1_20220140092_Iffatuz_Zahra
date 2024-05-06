@@ -1,0 +1,14 @@
+.container{
+    width: 80%;
+    margin: 30px auto;
+    padding: 10;
+    border: 3px solid black;
+}
+
+.container1{
+    width: 1000px;
+    height: 400px;
+    margin: 30px auto;
+    padding: 10;
+    border: 3px solid black;
+}
